@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo cubo</title>
+    <script>
+        var total = "Esta es una variable global";
+        function agregarImpuesto(subtotal, tasaImpuesto){
+            var total = subtotal *(1+(tasaImpuesto/100));
+            return total;
+        }
+
+
+    </script>   
+</head>
+
+<body>
+
+<script>
+
+    var valorFactura = agregarImpuesto(450, 20);
+    alert(valorFactura);
+    alert(total);
+
+
+</script>
+
+</body>
+</html>
